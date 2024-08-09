@@ -1,0 +1,73 @@
+---
+// Import any necessary components or styles here
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furry Fediverse</title>
+    <style>
+      .container {
+        min-height: calc(
+          100vh - 4rem
+        ); /* Adjust to leave some space for header/footer */
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="flex flex-col items-center justify-center min-h-screen bg-base-100 px-4"
+    >
+      <!-- Logo -->
+      <div class="mb-8">
+        <img src="/images/FullColor.svg" alt="Logo" class="w-auto h-auto" />
+      </div>
+
+      <!-- Full-Width Button -->
+      <div class="w-full max-w-md mb-4">
+        <a
+          href="/recommended-instance"
+          class="bg-primary text-base-100 font-bold py-3 rounded hover:bg-accent transition duration-300 block text-center"
+        >
+          Join A Recommended Instance Now!
+        </a>
+      </div>
+
+      <!-- Buttons -->
+      <div
+        role="alert"
+        class="alert alert-info text-center w-full max-w-md mb-4"
+      >
+        <span
+          >Use the button above to be auto directed to sign up on a General
+          Content instance or use the buttons below to browse the different
+          instances</span
+        >
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-md">
+        <a
+          href="/posts"
+          class="bg-blue-500 text-white font-bold py-4 px-6 rounded hover:bg-blue-700 transition duration-300 text-center"
+          >General Content</a
+        >
+        <a
+          href="/media"
+          class="bg-blue-500 text-white font-bold py-4 px-6 rounded hover:bg-blue-700 transition duration-300 text-center"
+          >Media Focus</a
+        >
+        <a
+          href="/links"
+          class="bg-blue-500 text-white font-bold py-4 px-6 rounded hover:bg-blue-700 transition duration-300 text-center"
+          >Link Sharing</a
+        >
+        <a
+          href="/chat"
+          class="bg-blue-500 text-white font-bold py-4 px-6 rounded hover:bg-blue-700 transition duration-300 text-center"
+          >Chat Platforms</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
